@@ -1,0 +1,9 @@
+<form [formGroup]="form">
+  <input formControlName="name">
+  <br>
+   <input formControlName="surname">
+     <br>
+  <button (click)="modeEditForm ? setProduct() : addProduct()">Patch Value</button> 
+</form>
+
+<pre>{{form.value | json}}</pre>
